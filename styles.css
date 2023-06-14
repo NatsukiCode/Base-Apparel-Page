@@ -1,0 +1,113 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+  body {
+    background-image: url(images/bg-pattern-desktop.svg);
+  }
+
+  .main-box {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-left: 160px;
+
+  }
+
+  .logo {
+    position: absolute;
+    top: 55px;
+    left: 0;
+  }
+
+  .main-messages, .texts {
+    color: hsl(0, 36%, 70%);
+  }
+
+  .main-messages {
+    font-size: 64px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    white-space: pre-line;
+    letter-spacing: 15px;
+    margin-top: -35px;
+    line-height: 1.1;
+  }
+
+  .main-messages span {
+    color: hsl(0, 6%, 24%);
+    font-weight: 600;
+  }
+  
+  .texts {
+    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 25px;
+    margin: 20px 0;
+  }
+
+  .right-contents {
+    margin-left: auto;
+  }
+
+  .add-email {
+    margin-top: 40px;
+    position: relative;
+  }
+
+  .add-email input::placeholder {
+    color: hsl(0, 36%, 70%);
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  .email {
+    width: 100%;
+    height: 50px;
+    border-radius: 30px;
+    padding-left: 30px;
+    border: 2px solid hsl(0, 36%, 70%);
+    opacity: 0.5;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+  }
+
+  .submit {
+    width: 90px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: hsl(0, 93%, 68%);
+    border: none;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .submit:hover {
+    opacity: 0.3;
+    cursor: pointer;
+  }
+
+  .icon-error {
+    position: absolute;
+    top: 12px;
+    right: 100px;
+  }
+
+    .error {
+    border: 2px solid red;
+}
+
+  .error-message {
+    color: hsl(0, 58%, 67%);
+    font-size: 14px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    padding-left: 35px;
+  }
