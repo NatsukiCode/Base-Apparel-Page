@@ -12,12 +12,21 @@ function runValidation(){
     emailIconError.style.display = 'none';
     emailAddressInput.classList.remove('error');
 
-    if (emailAddressInput.value === '') {
+    if (emailAddressInput.value.trim() === '') {
+        emailErrorMessage.innerText = 'Please provide a valid email';
+        emailErrorMessage.style.display = 'block';
+        emailAddressInput.classList.add('error');
+        emailIconError.style.display = 'block';
+        emailAddressInput.placeholder = '';
+    } else if (!isValidEmail(emailAddressInput.value.trim())) {
         emailErrorMessage.innerText = 'Please provide a valid email';
         emailErrorMessage.style.display = 'block';
         emailAddressInput.classList.add('error');
         emailIconError.style.display = 'block';
         emailAddressInput.placeholder = '';
     }
-
+}
+function isValidEmail(email) {
+    let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailPattern.test(email);
 }
